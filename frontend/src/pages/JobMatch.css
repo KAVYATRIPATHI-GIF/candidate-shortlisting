@@ -1,0 +1,78 @@
+.job-match { max-width: 1200px; margin: 0 auto; padding: 40px 24px; }
+
+.page-header { margin-bottom: 32px; }
+.page-title { font-family: var(--font-display); font-size: 32px; font-weight: 800; letter-spacing: -1px; margin-bottom: 8px; }
+.page-subtitle { color: var(--text-muted); }
+
+.match-layout { display: grid; grid-template-columns: 360px 1fr; gap: 24px; align-items: start; }
+
+.match-input { display: flex; flex-direction: column; gap: 20px; position: sticky; top: 80px; }
+.section-title { font-family: var(--font-display); font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+
+.form-group { display: flex; flex-direction: column; gap: 8px; }
+.form-group label { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); }
+.required { color: var(--accent-2); }
+
+.skill-input-row { display: flex; gap: 8px; }
+.skill-input-row input { flex: 1; }
+
+.skills-list { display: flex; flex-wrap: wrap; gap: 6px; }
+.skill-chip { display: inline-flex; align-items: center; gap: 5px; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 500; }
+.skill-chip-required { background: rgba(108,99,255,0.12); border: 1px solid rgba(108,99,255,0.25); color: #a09bff; }
+.skill-chip-preferred { background: rgba(67,233,123,0.08); border: 1px solid rgba(67,233,123,0.2); color: var(--high); }
+.chip-remove { background: none; font-size: 15px; padding: 0; line-height: 1; color: rgba(255,255,255,0.3); }
+.chip-remove:hover { color: var(--low); }
+
+.match-btn { display: flex; align-items: center; gap: 8px; justify-content: center; padding: 12px 24px; width: 100%; font-size: 15px; }
+
+.results-placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 80px 24px; color: var(--text-muted); text-align: center; }
+.placeholder-icon { font-size: 48px; }
+
+.results-summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 20px; }
+.summary-stat { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; text-align: center; }
+.stat-num { display: block; font-family: var(--font-display); font-size: 28px; font-weight: 800; color: var(--accent); }
+.stat-label { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+
+.chart-section { margin-bottom: 20px; padding: 20px; }
+.chart-title { font-family: var(--font-display); font-weight: 700; font-size: 15px; margin-bottom: 16px; color: var(--text-muted); }
+
+.results-list { display: flex; flex-direction: column; gap: 12px; }
+.result-card { padding: 18px 20px; }
+
+.result-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+
+.result-rank { font-family: var(--font-display); font-size: 13px; font-weight: 800; color: var(--text-dim); width: 24px; }
+
+.result-avatar {
+  width: 38px; height: 38px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 16px; color: #fff;
+  flex-shrink: 0;
+}
+
+.result-info { flex: 1; min-width: 0; }
+.result-name { font-weight: 600; font-size: 15px; }
+.result-email { font-size: 12px; color: var(--text-muted); }
+
+.result-right { display: flex; align-items: center; gap: 10px; }
+
+.score-circle {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--score-color, var(--accent));
+}
+
+.result-details { display: flex; flex-direction: column; gap: 8px; padding-top: 12px; border-top: 1px solid var(--border); }
+.result-detail { display: flex; align-items: center; gap: 10px; }
+.detail-label { font-size: 12px; color: var(--text-dim); min-width: 90px; }
+.exp-ok { color: var(--high); font-size: 13px; font-weight: 600; }
+.exp-fail { color: var(--low); font-size: 13px; font-weight: 600; }
+.match-skills { display: flex; flex-wrap: wrap; gap: 5px; }
+
+@media (max-width: 900px) {
+  .match-layout { grid-template-columns: 1fr; }
+  .match-input { position: static; }
+}
