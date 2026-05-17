@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { matchCandidates } from "../utils/api";
-import { RadarChart, Radar, PolarGrid, PolarAngleAxis, ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, Cell } from "recharts";
+import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, Cell } from "recharts";
 import "./JobMatch.css";
 
 export default function JobMatch() {
